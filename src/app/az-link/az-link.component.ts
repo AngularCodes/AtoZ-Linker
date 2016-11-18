@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  inputs: ['baseUrl'],
   selector: 'app-az-link',
   templateUrl: './az-link.component.html',
   styleUrls: ['./az-link.component.css']
@@ -9,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AzLinkComponent implements OnInit {
 
   links: string[] = [];
+
+  @Input()
   baseUrl: string;
 
   constructor() { }
