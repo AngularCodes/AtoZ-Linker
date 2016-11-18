@@ -12,7 +12,9 @@ export class AzLinkComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.links = ['a', 'b'];
+    for (let i = 0; i < 25; i++) {
+      this.links[i] = String.fromCharCode(i + 65);
+    }
   }
 
 }
