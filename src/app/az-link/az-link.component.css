@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-right: 5px;
+}
+
+li:last-child {
+    margin-right: 0px;
+}
+
+a {
+    text-decoration: none;
+}
