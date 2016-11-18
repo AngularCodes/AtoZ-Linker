@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AzLinkComponent implements OnInit {
 
+  links: string[] = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.links = ['a', 'b'];
   }
 
 }
