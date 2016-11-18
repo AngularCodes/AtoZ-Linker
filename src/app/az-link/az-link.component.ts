@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AzLinkComponent implements OnInit {
 
   links: string[] = [];
+  baseUrl: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.baseUrl = "baseUrl";
+
     for (let i = 0; i < 25; i++) {
       this.links[i] = String.fromCharCode(i + 65);
     }
